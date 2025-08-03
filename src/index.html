@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VelocityAuto</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="text-white scroll-smooth">
+    <nav class="fixed top-0 w-full bg-[rgba(26,26,26,0.95)] backdrop-blur-sm z-10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <a href="#home" class="text-2xl font-bold text-[#ff6b35] font-serif"
+            >VelocityAuto</a
+          >
+
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="font-medium hover:text-[#ff6b35]">Home</a>
+            <a href="#models" class="font-medium hover:text-amber-600"
+              >Models</a
+            >
+            <a href="#about" class="font-medium hover:text-amber-600">About</a>
+            <a href="#contact" class="font-medium hover:text-amber-600"
+              >Contact</a
+            >
+          </div>
+
+          <button id="mobileMenuBtn" class="md:hidden p-2">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+      <div id="mobileMenu" class="md:hidden border-t hidden">
+        <div class="px-4 py-6 space-y-4">
+          <a href="#home" class="block py-2 font-medium hover:text-[#ff6b35]"
+            >Home</a
+          >
+          <a href="#models" class="block py-2 font-medium hover:text-[#ff6b35]"
+            >Models</a
+          >
+          <a href="#about" class="block py-2 font-medium hover:text-[#ff6b35]"
+            >About</a
+          >
+          <a href="#contact" class="block py-2 font-medium hover:text-[#ff6b35]"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section
+      id="home"
+      class="min-h-screen flex justify-center items-center text-center px-4"
+    >
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 font-serif">Drive the Future</h1>
+        <p
+          class="text-lg md:text-xl text-white text-opacity-90 mb-8 max-w-3xl mx-auto"
+        >
+          Experience the perfect blend of luxury, performance, and innovation
+          with VelocityAuto's premium collection
+        </p>
+        <a
+          href="#models"
+          class="bg-[#ff6b35] inline-block px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:scale-105"
+          >Explore Models</a
+        >
+      </div>
+    </section>
+
+    <section id="models" class="py-16 lg:py-24 bg-[#1a1a1a]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 font-serif"
+        >
+          Our Premium Collections
+        </h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="bg-[#1a1a1a] rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-2"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-2xl font-semibold mb-4">VelocityAuto Sport</h3>
+              <p class="mb-6 opacity-80">
+                Experience pure adrenaline with our flagship sports car.
+                Engineered for performance enthusiasts who demand nothing but
+                excellence.
+              </p>
+              <a
+                href="#"
+                class="inline-block px-6 py-3 border-2 border-[#ff6b35] text-[#ff6b35] font-semibold rounded-full"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#1a1a1a] rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-2"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-2xl font-semibold mb-4">VelocityAuto Luxury</h3>
+              <p class="mb-6 opacity-80">
+                Redefine comfort and elegance with our luxury sedan. Where
+                sophistication meets cutting-edge technology.
+              </p>
+              <a
+                href="#"
+                class="inline-block px-6 py-3 border-2 border-[#ff6b35] text-[#ff6b35] font-semibold rounded-full"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="bg-[#1a1a1a] rounded-3xl overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.3)] hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-300 hover:-translate-y-2 md:col-span-2 lg:col-span-1"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1581540222194-0def2dda95b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+              class="w-full h-64 object-cover"
+            />
+            <div class="p-8">
+              <h3 class="text-2xl font-semibold mb-4">
+                VelocityAuto Adventure
+              </h3>
+              <p class="mb-6 opacity-80">
+                Conquer any terrain with our premium SUV. Built for adventurers
+                who refuse to compromise on luxury.
+              </p>
+              <a
+                href="#"
+                class="inline-block px-6 py-3 border-2 border-[#ff6b35] text-[#ff6b35] font-semibold rounded-full"
+              >
+                View Details
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 lg:py-24 bg-black">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="left">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 font-serif">
+              Crafting Excellence Since 1985
+            </h2>
+            <div class="space-y-6 text-lg leading-relaxed opacity-90">
+              <p>
+                At VelocityAuto, we don't just build cars we craft
+                experiences. For over three decades, we've been at the forefront
+                of automotive innovation, pushing boundaries and redefining
+                what's possible on four wheels.
+              </p>
+              <p>
+                Our commitment to precision engineering, sustainable
+                manufacturing, and customer satisfaction has made us a trusted
+                name in the luxury automotive industry. Every VelocityAuto
+                vehicle represents our unwavering dedication to quality and
+                performance.
+              </p>
+              <p>
+                From our state-of-the-art manufacturing facilities to our
+                world-class design studios, we continue to set new standards in
+                automotive excellence.
+              </p>
+            </div>
+          </div>
+          <div class="right">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80"
+              alt="VelocityAuto Factory"
+              class="w-full h-96 object-cover rounded-3xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 lg:py-24 bg-[#1a1a1a]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2
+          class="font-playfair text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-12 font-serif"
+        >
+          Get In Touch
+        </h2>
+
+        <div class="grid lg:grid-cols-2 gap-12">
+          <div
+            class="bg-[#262424] p-8 lg:p-12 rounded-3xl shadow-[0_10px_30px_rgba(0,0,0,0.3)]"
+          >
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="name" class="block text-sm font-semibold mb-2"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="w-full px-4 py-4 border-2 border-transparent bg-[#373131] rounded-xl focus:border-[#ff6b35] focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label for="email" class="block text-sm font-semibold mb-2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-4 border-2 rounded-xl border-transparent bg-[#373131] focus:border-[#ff6b35] focus:outline-none transition-colors"
+                />
+              </div>
+              <div>
+                <label for="message" class="block text-sm font-semibold mb-2"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  placeholder="Tell us about your dream car..."
+                  class="w-full px-4 py-4 bg-[#373131] border-2 border-transparent rounded-xl focus:border-[#ff6b35] focus:outline-none transition-colors resize-none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full hover:bg-opacity-90 text-white bg-[#ff6b35] py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="space-y-6 flex flex-col justify-around">
+            <div
+              class="flex items-start space-x-4 p-6 bg-[#262424] rounded-3xl shadow-2xl"
+            >
+              <div
+                class="w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fas fa-map-marker-alt text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Visit Our Showroom</h3>
+                <p class="text-gray-600">
+                  123 Luxury Avenue, Premium District<br />New York, NY 10001
+                </p>
+              </div>
+            </div>
+
+
+            <div
+              class="flex items-start space-x-4 p-6 bg-[#262424] rounded-3xl shadow-lg"
+            >
+              <div
+                class="w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fas fa-phone text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Call Us</h3>
+                <p class="text-gray-600">
+                  +1 (555) 123-4567<br />Mon-Sat: 9AM - 8PM
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="flex items-start space-x-4 p-6 bg-[#262424] rounded-3xl shadow-lg"
+            >
+              <div
+                class="w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center flex-shrink-0"
+              >
+                <i class="fas fa-envelope text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-2">Email Us</h3>
+                <p class="text-gray-600">
+                  info@velocityauto.com<br />support@velocityauto.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-black py-16 border-t border-gray-200">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          <div class="lg:col-span-1">
+            <a
+              href="#"
+              class="font-playfair text-2xl font-bold text-[#ff6b35] mb-4 block"
+              >VelocityAuto</a
+            >
+            <p class="text-gray-400 mb-6 leading-relaxed">
+              Driving the future of luxury automotive excellence. Experience the
+              perfect blend of performance, innovation, and style.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#ff6b35] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#ff6b35] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#ff6b35] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 bg-[#ff6b35] rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg mb-6">Quick Links</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#models"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Our Models</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg mb-6">Services</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Test Drive</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Financing</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Maintenance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Insurance</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-semibold text-lg mb-6">Support</h3>
+            <ul class="space-y-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Customer Service</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Warranty</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >Owner's Manual</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-[#ff6b35] transition-colors"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-8 text-center text-gray-400">
+          <p>
+            &copy; 2024 VelocityAuto. All rights reserved. | Privacy Policy |
+            Terms of Service
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
